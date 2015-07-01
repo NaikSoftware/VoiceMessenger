@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main_label" parent="android:Widget.TextView">
+        <item name="android:textSize">23sp</item>
+    </style>
+</resources>

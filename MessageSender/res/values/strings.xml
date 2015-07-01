@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Message Sender</string>
+    <string name="input_message">Input message</string>
+    <string name="select_receiver">Select receiver</string>
+    <string name="empty_list">Empty list</string>
+    <string name="wifi_not_detected">Not detected WiFi on device</string>
+    <string name="connection_not_detected">Connection not detected</string>
+    <string name="cant_get_ip">Can not get device IPv4 in network</string>
+    <string name="listen">Listen as</string>
+    <string name="stop_receiver">Stop receiver</string>
+</resources>

@@ -1,0 +1,24 @@
+/home/naik/NetBeansProjects/MessageSender/bin/classes.dex : \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/utils/InetUtils.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/ReceiversAdapter$1.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$3.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$2.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/R$string.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/R.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/ReceiversAdapter$ViewHolder.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/R$style.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$6.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/R$id.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$Receiver.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/ReceiversAdapter.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/BuildConfig.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/R$layout.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$7.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$5.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$1.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/R$attr.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$7$1.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/MainActivity$4.class \
+/home/naik/NetBeansProjects/MessageSender/bin/classes/ua/naiksoftware/messagesender/R$drawable.class \
+/home/naik/NetBeansProjects/MessageSender/bin/dexedLibs/jmdns-3.4.1-f6a91db2334b1c4f96ee1da8ba08ac36.jar \

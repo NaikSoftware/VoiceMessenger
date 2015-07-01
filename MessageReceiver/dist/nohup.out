@@ -1,0 +1,19 @@
+Register service in 192.168.0.104
+Server 192.168.0.104 started
+Тест
+Player created
+Player playing
+Service N registered
+Receiving started
+лип. 01, 2015 1:14:46 PM messagereceiver.MessageReceiver startReceiving
+SEVERE: null
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.bind(ServerSocket.java:329)
+	at messagereceiver.MessageReceiver$ServerThread.<init>(MessageReceiver.java:126)
+	at messagereceiver.MessageReceiver.startReceiving(MessageReceiver.java:64)
+	at messagereceiver.MessageReceiver.main(MessageReceiver.java:45)
+
+Receiving started
