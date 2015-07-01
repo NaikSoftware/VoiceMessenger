@@ -3,4 +3,5 @@
 #
 # Java background service for receiving messages and say them
 
-nohup java -jar "MessageReceiverPacked.jar" daemon &
+dir=`expr match "$0" '\(.*/\)'`
+nohup java -jar $dir"/MessageReceiverPacked.jar" daemon &

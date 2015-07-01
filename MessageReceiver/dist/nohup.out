@@ -17,3 +17,15 @@ java.net.BindException: Address already in use
 	at messagereceiver.MessageReceiver.main(MessageReceiver.java:45)
 
 Receiving started
+Register service in 192.168.0.104
+Server 192.168.0.104 started
+Service N registered
+Receiving started
+Register service in 192.168.0.104
+Server 192.168.0.104 started
+Service N registered
+Receiving started
+Register service in 192.168.0.104
+Server 192.168.0.104 started
+Service N registered
+Receiving started
