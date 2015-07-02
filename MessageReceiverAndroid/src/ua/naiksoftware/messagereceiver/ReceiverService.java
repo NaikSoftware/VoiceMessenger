@@ -3,7 +3,9 @@ package ua.naiksoftware.messagereceiver;
 import java.net.*;
 
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Handler;
@@ -35,11 +37,14 @@ public class ReceiverService extends Service {
     private static final Object lock = new Object();
     private static final Semaphore waiter = new Semaphore(0);
     private Handler uiHandler;
+    private AudioManager audioManager;
+    private int lastVolume;
 
     @Override
     public void onCreate() {
         super.onCreate();
         uiHandler = new Handler();
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
     }
 
     @Override
@@ -228,12 +233,19 @@ public class ReceiverService extends Service {
         }
     }
 
-    private static void playText(String text, ReceiverService service) {
+    private static void playText(String text, final ReceiverService service) {
         try {
             URL url = new URL("http://translate.google.com/translate_tts?ie=UTF-8&tl=ru&q=" + URLEncoder.encode(text, "UTF-8"));
             File file = FileUtils.saveTempFile(url);
+            service.setMaxVolume();
             MediaPlayer player = MediaPlayer.create(service, Uri.fromFile(file));
             player.start();
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
+                public void onCompletion(MediaPlayer mp) {
+                    service.restoreVolume();
+                }
+            });
 
             Log.i(TAG, "Player playing");
         } catch (FileNotFoundException ex) {
@@ -288,6 +300,19 @@ public class ReceiverService extends Service {
         }
         toast("Message receiver stopped");
         super.onDestroy();
+    }
+
+    private void setMaxVolume() {
+        lastVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC,
+                audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC),
+                AudioManager.FLAG_PLAY_SOUND);
+    }
+    
+    private void restoreVolume() {
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC,
+                lastVolume,
+                AudioManager.FLAG_PLAY_SOUND);
     }
 
 }
